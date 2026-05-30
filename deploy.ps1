@@ -14,17 +14,21 @@ Pop-Location
 
 $Deploy = "$Root/_site"
 if (Test-Path $Deploy) { Remove-Item -Recurse -Force $Deploy }
-New-Item -ItemType Directory -Path "$Deploy/arpit-portfolio", "$Deploy/arpit-portfolio-airtel" -Force | Out-Null
-Copy-Item -Recurse "$Root/arpit-portfolio/dist/arpit-portfolio/browser/*" "$Deploy/arpit-portfolio/"
+New-Item -ItemType Directory -Path "$Deploy/arpit-portfolio-airtel" -Force | Out-Null
+
+# Main portfolio at gh-pages root -> served at /arpit-portfolio/
+Copy-Item -Recurse "$Root/arpit-portfolio/dist/arpit-portfolio/browser/*" "$Deploy/"
+# Airtel variant in subfolder -> served at /arpit-portfolio/arpit-portfolio-airtel/
 Copy-Item -Recurse "$Root/arpit-portfolio-airtel/dist/arpit-portfolio/browser/*" "$Deploy/arpit-portfolio-airtel/"
-Copy-Item "$Root/arpit-portfolio/public/404.html" "$Deploy/404.html"
-Set-Content -Path "$Deploy/index.html" -Value '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/arpit-portfolio/"></head></html>'
+
+New-Item -ItemType File -Path "$Deploy/.nojekyll", "$Deploy/arpit-portfolio-airtel/.nojekyll" -Force | Out-Null
 
 Write-Host "Publishing to gh-pages branch..."
 Push-Location "$Root/arpit-portfolio"
 npx gh-pages -d "../_site" -m "Deploy both portfolio sites"
 Pop-Location
 
-Write-Host "Done!"
-Write-Host "  https://arpitsangal1997.github.io/arpit-portfolio/"
-Write-Host "  https://arpitsangal1997.github.io/arpit-portfolio-airtel/"
+Write-Host ""
+Write-Host "Live URLs:"
+Write-Host "  Original: https://arpitsangal1997.github.io/arpit-portfolio/"
+Write-Host "  Airtel:   https://arpitsangal1997.github.io/arpit-portfolio/arpit-portfolio-airtel/"
