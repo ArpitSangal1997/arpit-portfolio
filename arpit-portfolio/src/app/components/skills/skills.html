@@ -4,13 +4,13 @@
     <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
 
     <div class="category-tabs">
-      @for (cat of categories; track cat) {
+      @for (cat of categories(); track cat) {
         <button class="cat-tab" [class.active]="activeCategory() === cat" (click)="setCategory(cat)">{{ cat }}</button>
       }
     </div>
 
     <div class="skills-grid">
-      @for (skill of filteredSkills; track skill.name; let i = $index) {
+      @for (skill of filteredSkills(); track skill.name; let i = $index) {
         <div class="skill-item">
           <div class="skill-header">
             <span class="skill-name">{{ skill.name }}</span>
@@ -29,7 +29,7 @@
     <div class="all-skills-cloud">
       <div class="cloud-label">Full stack</div>
       <div class="cloud-tags">
-        @for (s of skills; track s.name) {
+        @for (s of portfolio.skills(); track s.name) {
           <span class="cloud-tag" [style.fontSize]="(0.7 + s.level * 0.005) + 'rem'">{{ s.name }}</span>
         }
       </div>

@@ -1,15 +1,15 @@
 <nav class="navbar" [class.scrolled]="scrolled" [class.dark]="theme.isDark()">
   <div class="nav-container">
     <a class="nav-brand" (click)="scrollTo('#hero')">
-      <span class="brand-init">AS</span>
-      <span class="brand-name">Arpit Sangal</span>
+      <span class="brand-init">{{ portfolio.profile().firstName[0] }}{{ portfolio.profile().lastName[0] }}</span>
+      <span class="brand-name">{{ portfolio.profile().name }}</span>
     </a>
 
     <div class="nav-links" [class.open]="menuOpen">
       @for (link of navLinks; track link.label) {
         <a class="nav-link" (click)="scrollTo(link.href)">{{ link.label }}</a>
       }
-      <a class="nav-link resume-btn" href="assets/Arpit_30_05_26.pdf" download="Arpit_Sangal_Resume.pdf">
+      <a class="nav-link resume-btn" [href]="portfolio.resumePdfUrl()" download="Arpit_Sangal_Resume.pdf">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
           <polyline points="7 10 12 15 17 10"/>

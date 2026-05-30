@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   selector: 'app-hero',
@@ -9,6 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero.scss'
 })
 export class HeroComponent {
+  portfolio = inject(PortfolioService);
+
   scrollTo(href: string) {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });

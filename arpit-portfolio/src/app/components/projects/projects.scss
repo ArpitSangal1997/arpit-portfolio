@@ -8,14 +8,10 @@
 }
 
 .project-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 20px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 
@@ -23,24 +19,19 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.04) 0%, transparent 60%);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.06) 0%, transparent 60%);
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none;
+    border-radius: inherit;
   }
 
-  &:hover {
-    border-color: rgba(var(--accent-rgb), 0.35);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 48px rgba(0,0,0,0.1);
-
-    &::before { opacity: 1; }
-    .card-number { color: var(--accent); }
-  }
+  &:hover::before { opacity: 1; }
+  &:hover .card-number { color: var(--accent); }
 
   &.featured {
     grid-column: span 2;
-    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.06) 0%, var(--surface) 60%);
-    border-color: rgba(var(--accent-rgb), 0.2);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.1) 0%, var(--glass) 60%);
 
     @media (max-width: 900px) { grid-column: span 1; }
   }

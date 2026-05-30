@@ -5,8 +5,10 @@ import { AboutComponent } from './components/about/about';
 import { ExperienceComponent } from './components/experience/experience';
 import { ProjectsComponent } from './components/projects/projects';
 import { SkillsComponent } from './components/skills/skills';
+import { GitHubComponent } from './components/github/github';
 import { ContactComponent } from './components/contact/contact';
 import { FooterComponent } from './components/footer/footer';
+import { Scene3dComponent } from './components/scene-3d/scene-3d';
 
 @Component({
   selector: 'app-root',
@@ -18,21 +20,31 @@ import { FooterComponent } from './components/footer/footer';
     ExperienceComponent,
     ProjectsComponent,
     SkillsComponent,
+    GitHubComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    Scene3dComponent
   ],
   template: `
+    <app-scene-3d />
     <app-navbar />
-    <main>
+    <main class="main-content">
       <app-hero />
       <app-about />
       <app-experience />
       <app-projects />
       <app-skills />
+      <app-github />
       <app-contact />
     </main>
     <app-footer />
   `,
-  styles: [`main { display: block; }`]
+  styles: [`
+    .main-content {
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+  `]
 })
 export class App {}

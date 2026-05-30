@@ -1,18 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../../services/portfolio.service';
+import { TiltCardDirective } from '../../directives/tilt-card.directive';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TiltCardDirective],
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
 export class AboutComponent {
-  highlights = [
-    { icon: '⚡', label: 'API Performance', value: '35% improvement' },
-    { icon: '🐛', label: 'Bug Reduction', value: '30% fewer recurrences' },
-    { icon: '📅', label: 'Sprint Delivery', value: '95% on-time' },
-    { icon: '🏗️', label: 'Tech Debt', value: '25% reduction' },
-  ];
+  portfolio = inject(PortfolioService);
 }

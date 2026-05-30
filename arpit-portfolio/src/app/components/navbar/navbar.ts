@@ -1,6 +1,7 @@
 import { Component, inject, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../../services/theme.service';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ import { ThemeService } from '../../services/theme.service';
 })
 export class NavbarComponent {
   theme = inject(ThemeService);
+  portfolio = inject(PortfolioService);
   scrolled = false;
   menuOpen = false;
 
@@ -18,6 +20,7 @@ export class NavbarComponent {
     { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
     { label: 'Projects', href: '#projects' },
+    { label: 'GitHub', href: '#github' },
     { label: 'Skills', href: '#skills' },
     { label: 'Contact', href: '#contact' },
   ];

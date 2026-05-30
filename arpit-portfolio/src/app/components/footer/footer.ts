@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,5 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './footer.scss'
 })
 export class FooterComponent {
+  portfolio = inject(PortfolioService);
   year = new Date().getFullYear();
 }

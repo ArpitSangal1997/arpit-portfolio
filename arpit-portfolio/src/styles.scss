@@ -9,6 +9,7 @@
   --bg: #fafafa;
   --bg-rgb: 250, 250, 250;
   --surface: #ffffff;
+  --surface-rgb: 255, 255, 255;
   --border: #e5e7eb;
   --text-primary: #0a0a0a;
   --text-secondary: #4b5563;
@@ -19,16 +20,24 @@
   --accent-dark: #1d4ed8;
   --accent-light: #60a5fa;
   --accent-rgb: 37, 99, 235;
+
+  --glass: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --shadow-3d: 0 24px 64px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(var(--accent-rgb), 0.06);
 }
 
 [data-theme="dark"] {
   --bg: #0a0a0f;
   --bg-rgb: 10, 10, 15;
   --surface: #111118;
+  --surface-rgb: 17, 17, 24;
   --border: #1f2028;
   --text-primary: #f0f0f5;
   --text-secondary: #9ca3af;
   --text-muted: #4b5563;
+  --glass: rgba(17, 17, 24, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --shadow-3d: 0 24px 64px rgba(0, 0, 0, 0.45), 0 8px 32px rgba(var(--accent-rgb), 0.12);
 }
 
 /* ===== RESET & BASE ===== */
@@ -69,7 +78,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section:nth-child(even) {
-  background: var(--surface);
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(var(--accent-rgb), 0.03) 50%,
+    transparent 100%
+  );
+}
+
+/* ===== 3D CARD SYSTEM ===== */
+.card-3d {
+  background: var(--glass);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-3d);
+  transform-style: preserve-3d;
+  transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      600px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+      rgba(var(--accent-rgb), 0.12),
+      transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  &:hover {
+    border-color: rgba(var(--accent-rgb), 0.35);
+    box-shadow: var(--shadow-3d), 0 0 40px rgba(var(--accent-rgb), 0.15);
+
+    &::after { opacity: 1; }
+  }
 }
 
 /* ===== SECTION LABELS & TITLES ===== */

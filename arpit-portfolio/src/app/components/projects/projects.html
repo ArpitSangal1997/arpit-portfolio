@@ -4,8 +4,8 @@
     <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
 
     <div class="projects-grid">
-      @for (project of projects; track project.name; let i = $index) {
-        <div class="project-card" [class.featured]="i === 0">
+      @for (project of portfolio.projects(); track project.name; let i = $index) {
+        <div class="project-card card-3d" appTiltCard [class.featured]="i === 0">
           <div class="card-number">{{ (i + 1).toString().padStart(2, '0') }}</div>
           <div class="card-body">
             <div class="card-top">

@@ -1,4 +1,4 @@
-import { Component, inject, signal, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, inject, signal, AfterViewInit, ElementRef, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioService } from '../../services/portfolio.service';
 
@@ -12,14 +12,14 @@ import { PortfolioService } from '../../services/portfolio.service';
 export class SkillsComponent implements AfterViewInit {
   portfolio = inject(PortfolioService);
   el = inject(ElementRef);
-  skills = this.portfolio.getSkills();
-  categories = this.portfolio.getSkillCategories();
   activeCategory = signal('Backend');
   animated = signal(false);
 
-  get filteredSkills() {
-    return this.skills.filter(s => s.category === this.activeCategory());
-  }
+  categories = computed(() => this.portfolio.skillCategories());
+
+  filteredSkills = computed(() =>
+    this.portfolio.skills().filter(s => s.category === this.activeCategory())
+  );
 
   setCategory(cat: string) { this.activeCategory.set(cat); }
 
