@@ -1,0 +1,59 @@
+<section id="experience" class="section exp-section">
+  <div class="container">
+    <div class="section-label">Career</div>
+    <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+
+    <div class="exp-layout">
+      <!-- Timeline tabs -->
+      <div class="exp-tabs">
+        @for (exp of experiences; track exp.company; let i = $index) {
+          <button class="exp-tab" [class.active]="activeIndex === i" (click)="select(i)">
+            <div class="tab-dot" [class.current]="exp.current"></div>
+            <div class="tab-content">
+              <span class="tab-company">{{ exp.company }}</span>
+              <span class="tab-period">{{ exp.period }}</span>
+            </div>
+          </button>
+        }
+        <div class="timeline-line"></div>
+      </div>
+
+      <!-- Detail panel -->
+      @let exp = experiences[activeIndex];
+      <div class="exp-detail">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title-row">
+              <h3 class="exp-job-title">{{ exp.title }}</h3>
+              @if (exp.current) {
+                <span class="current-badge">Current</span>
+              }
+              @if (exp.type) {
+                <span class="type-badge">{{ exp.type }}</span>
+              }
+            </div>
+            <div class="exp-meta">
+              <span class="exp-company">{{ exp.company }}</span>
+              <span class="meta-sep">·</span>
+              <span class="exp-location">{{ exp.location }}</span>
+              <span class="meta-sep">·</span>
+              <span class="exp-period">{{ exp.period }}</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="exp-points">
+          @for (pt of exp.points; track pt) {
+            <li>{{ pt }}</li>
+          }
+        </ul>
+
+        <div class="exp-tech">
+          @for (t of exp.tech; track t) {
+            <span class="tech-pill">{{ t }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
