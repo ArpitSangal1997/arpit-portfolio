@@ -1,0 +1,43 @@
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-label">About me</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">
+          {{ portfolio.about().headlineMain }}<br>
+          <span class="accent">{{ portfolio.about().headlineAccent }}</span>
+        </h2>
+        @for (p of portfolio.about().paragraphs; track p) {
+          <p>{{ p }}</p>
+        }
+
+        <div class="about-meta">
+          <div class="meta-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {{ portfolio.profile().location }}
+          </div>
+          <div class="meta-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            {{ portfolio.profile().education }}
+          </div>
+          <div class="meta-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.07 3.46a2 2 0 0 1 1.97-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91A16 16 0 0 0 15 17.82l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            {{ portfolio.profile().phone }}
+          </div>
+        </div>
+      </div>
+
+      <div class="about-highlights">
+        @for (h of portfolio.about().highlights; track h.label) {
+          <div class="highlight-card card-3d">
+            <span class="h-icon">{{ h.icon }}</span>
+            <div>
+              <div class="h-value">{{ h.value }}</div>
+              <div class="h-label">{{ h.label }}</div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

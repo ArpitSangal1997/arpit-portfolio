@@ -24,30 +24,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'npm'
 
-      - name: Build main portfolio
-        working-directory: arpit-portfolio
-        run: |
-          npm ci --legacy-peer-deps
-          npm run build:gh-pages
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
 
-      - name: Build Airtel portfolio
-        working-directory: arpit-portfolio-airtel
-        run: |
-          npm ci --legacy-peer-deps
-          npm run build:gh-pages
-
-      - name: Combine sites for GitHub Pages
-        run: |
-          mkdir -p combined
-          cp -r arpit-portfolio/dist/arpit-portfolio/browser combined/arpit-portfolio
-          cp -r arpit-portfolio-airtel/dist/arpit-portfolio/browser combined/arpit-portfolio-airtel
-          cp arpit-portfolio/public/404.html combined/404.html
+      - name: Build for GitHub Pages
+        run: npm run build:gh-pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './combined'
+          path: './dist/arpit-portfolio/browser'
 
   deploy:
     environment:

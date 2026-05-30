@@ -1,0 +1,125 @@
+
+/* ===== AIRTEL CAREERS DESIGN SYSTEM ===== */
+:root {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Plus Jakarta Sans', sans-serif;
+
+  --airtel-red: #d73737;
+  --airtel-red-dark: #b82e2e;
+  --airtel-red-rgb: 215, 55, 55;
+  --airtel-black: #292c31;
+  --airtel-black-rgb: 41, 44, 49;
+  --airtel-lavender: #ecedff;
+  --airtel-lavender-rgb: 236, 237, 255;
+  --airtel-gray: #7b8ba3;
+  --airtel-gray-light: #f3f4f7;
+
+  --bg: #fbfbff;
+  --bg-rgb: 251, 251, 255;
+  --surface: #ffffff;
+  --surface-rgb: 255, 255, 255;
+  --border: #e8eaf0;
+  --text-primary: #292c31;
+  --text-secondary: #5a6478;
+  --text-muted: #7b8ba3;
+
+  --accent: var(--airtel-red);
+  --accent-dark: var(--airtel-red-dark);
+  --accent-light: #e85555;
+  --accent-rgb: var(--airtel-red-rgb);
+
+  --glass: #ffffff;
+  --glass-border: #e8eaf0;
+  --shadow-3d: 0 4px 24px rgba(41, 44, 49, 0.08);
+  --radius-pill: 32px;
+  --radius-card: 16px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-feature-settings: 'liga' off;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 98px 0;
+
+  @media (max-width: 767px) { padding: 44px 0; }
+}
+
+.section:nth-child(even) {
+  background: var(--airtel-lavender);
+}
+
+.card-3d {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-3d);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::after { display: none; }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(41, 44, 49, 0.12);
+    border-color: rgba(var(--airtel-red-rgb), 0.25);
+  }
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--airtel-red);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--airtel-black);
+  margin-bottom: 48px;
+  line-height: 1.15;
+
+  .accent { color: var(--airtel-red); }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--airtel-red); }
+
+::selection { background: rgba(var(--airtel-red-rgb), 0.15); }
+
+.skills-section .cat-tab.active {
+  background: var(--airtel-black);
+  border-color: var(--airtel-black);
+  color: #f6f6f6;
+  border-radius: var(--radius-pill);
+}

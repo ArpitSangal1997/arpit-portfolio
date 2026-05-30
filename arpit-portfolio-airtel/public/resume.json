@@ -1,0 +1,163 @@
+{
+  "profile": {
+    "name": "Arpit Sangal",
+    "firstName": "Arpit",
+    "lastName": "Sangal",
+    "title": "Software Engineer",
+    "tagline": "Software Engineer in the Airtel ecosystem — building scalable microservices and RESTful APIs with Java & Spring Boot. Driving 35% faster APIs and enterprise-grade backend systems.",
+    "available": true,
+    "resumePdf": "Arpit_30_05_26.pdf",
+    "github": {
+      "username": "ArpitSangal1997",
+      "url": "https://github.com/ArpitSangal1997"
+    },
+    "linkedin": {
+      "username": "arpit-sangal",
+      "url": "https://linkedin.com/in/arpit-sangal"
+    },
+    "email": "sangalarpitsml@gmail.com",
+    "phone": "+91-9870956252",
+    "location": "Noida, India",
+    "education": "MCA — GL Bajaj Institute, 2022"
+  },
+  "stats": [
+    { "value": "3+", "label": "Years Exp." },
+    { "value": "35%", "label": "API Boost" },
+    { "value": "95%", "label": "On-Time" }
+  ],
+  "about": {
+    "headlineMain": "Crafting robust",
+    "headlineAccent": "backend systems",
+    "paragraphs": [
+      "I'm a Software Engineer with 3 years of experience building enterprise-grade microservices and RESTful APIs. My work spans Java, Spring Boot, and cloud platforms—primarily AWS and GCP.",
+      "Currently at MetroTelWorks (Airtel), I specialize in improving system performance, reducing technical debt, and delivering scalable solutions in Agile environments. I care deeply about clean architecture, measurable outcomes, and developer experience.",
+      "When I'm not optimizing SQL queries or designing microservice architectures, I'm exploring new backend frameworks and contributing to team growth through code reviews and documentation."
+    ],
+    "highlights": [
+      { "icon": "⚡", "label": "API Performance", "value": "35% improvement" },
+      { "icon": "🐛", "label": "Bug Reduction", "value": "30% fewer recurrences" },
+      { "icon": "📅", "label": "Sprint Delivery", "value": "95% on-time" },
+      { "icon": "🏗️", "label": "Tech Debt", "value": "25% reduction" }
+    ]
+  },
+  "experiences": [
+    {
+      "title": "Software Engineer",
+      "company": "MetroTelWorks | Airtel",
+      "location": "Gurugram, India",
+      "period": "Feb 2026 – Present",
+      "current": true,
+      "points": [
+        "Developed and maintained scalable RESTful APIs using Java and Spring Boot for enterprise workflow and operational management systems.",
+        "Improved API response time by 35% through SQL query optimization, caching strategies, and backend code enhancements.",
+        "Designed backend microservices and optimized service communication for improved scalability and maintainability.",
+        "Implemented asynchronous processing and backend optimizations to reduce service latency.",
+        "Refactored legacy modules reducing technical debt by 25%.",
+        "Integrated backend services with AWS infrastructure and implemented secure authentication and access control.",
+        "Collaborated with frontend developers for seamless Angular integration and API consumption."
+      ],
+      "tech": ["Java", "Spring Boot", "Microservices", "REST APIs", "MySQL", "AWS", "Jenkins", "Docker", "Angular"]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Wipro",
+      "location": "Noida, India",
+      "period": "Aug 2024 – Aug 2025",
+      "points": [
+        "Architected and deployed RESTful APIs using Java and Spring Boot supporting core business workflows for 100+ users.",
+        "Optimized API performance by 35% through advanced query optimization, caching strategies, and efficient code design.",
+        "Resolved critical production issues and improved system stability through backend optimizations.",
+        "Integrated backend services with GCP infrastructure including Cloud Storage, Cloud SQL, and Compute Engine.",
+        "Refactored legacy modules reducing technical debt and improving maintainability.",
+        "Collaborated with stakeholders to gather requirements and deliver scalable backend solutions."
+      ],
+      "tech": ["Java", "Spring Boot", "REST APIs", "GCP", "MySQL", "Docker", "Git"]
+    },
+    {
+      "title": "Associate Software Engineer",
+      "company": "Vision India Services / MediaTek",
+      "location": "Noida, India",
+      "period": "Apr 2024 – Jun 2024",
+      "type": "Contractual",
+      "points": [
+        "Built scalable microservices using Java and Spring Boot with JWT-based authentication and authorization.",
+        "Developed responsive Angular UI components and integrated frontend modules with backend APIs.",
+        "Integrated secure third-party REST APIs and optimized backend workflows.",
+        "Optimized MySQL database performance using indexing, query tuning, and stored procedures.",
+        "Established CI/CD pipelines using Git, Maven, and Jenkins.",
+        "Achieved 80%+ code coverage through unit and integration testing using JUnit and Mockito."
+      ],
+      "tech": ["Java", "Spring Boot", "JWT", "Angular", "MySQL", "Jenkins", "Maven", "JUnit", "Mockito"]
+    },
+    {
+      "title": "Associate Software Engineer",
+      "company": "KiwiTech",
+      "location": "Noida, India",
+      "period": "Mar 2022 – Jun 2023",
+      "points": [
+        "Developed RESTful APIs and backend services reducing system latency by 10%.",
+        "Implemented asynchronous processing and batch operations improving backend efficiency.",
+        "Collaborated with business analysts and product teams to deliver scalable technical solutions.",
+        "Participated in code reviews, debugging, and backend enhancements maintaining high code quality standards.",
+        "Worked closely with frontend developers to integrate APIs with Angular applications."
+      ],
+      "tech": ["Java", "Spring Boot", "REST APIs", "Angular", "MySQL", "Git"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "eWAT",
+      "description": "Enterprise Work Allocation Tool — an internal platform for tracking production/non-production hours and task allocation for 100+ users.",
+      "tech": ["Java", "Spring Boot", "MySQL", "GCP"],
+      "company": "Wipro",
+      "highlights": [
+        "Designed and developed internal platform for tracking 100+ users",
+        "Implemented automated reporting modules with downloadable activity logs",
+        "Created testing documentation and enhanced onboarding manuals"
+      ]
+    },
+    {
+      "name": "MantelTop",
+      "description": "Digital badge creation and exchange platform with secure user workflows, JWT authentication, and real-time badge operations.",
+      "tech": ["Java", "Spring Boot", "Angular", "MySQL", "JWT"],
+      "company": "Vision India Services",
+      "highlights": [
+        "Built secure digital badge creation and exchange workflows",
+        "Architected scalable backend services for real-time badge operations",
+        "Implemented RESTful APIs enabling seamless frontend-backend communication"
+      ]
+    },
+    {
+      "name": "WalkSpan",
+      "description": "City exploration platform integrating real-time location and mapping APIs with a responsive Angular UI for enhanced user engagement.",
+      "tech": ["Java", "Angular", "REST APIs", "Location Services"],
+      "company": "KiwiTech",
+      "highlights": [
+        "Developed city exploration platform with real-time location APIs",
+        "Designed responsive Angular UI enhancing user engagement",
+        "Integrated third-party mapping and location services"
+      ]
+    }
+  ],
+  "skills": [
+    { "name": "Java", "level": 92, "category": "Backend" },
+    { "name": "Spring Boot", "level": 90, "category": "Backend" },
+    { "name": "Microservices", "level": 85, "category": "Backend" },
+    { "name": "REST APIs", "level": 92, "category": "Backend" },
+    { "name": "Hibernate", "level": 80, "category": "Backend" },
+    { "name": "Angular", "level": 78, "category": "Frontend" },
+    { "name": "TypeScript", "level": 75, "category": "Frontend" },
+    { "name": "JavaScript", "level": 75, "category": "Frontend" },
+    { "name": "Bootstrap", "level": 80, "category": "Frontend" },
+    { "name": "MySQL", "level": 85, "category": "Database" },
+    { "name": "SQL Query Tuning", "level": 82, "category": "Database" },
+    { "name": "AWS", "level": 78, "category": "Cloud & DevOps" },
+    { "name": "Docker", "level": 75, "category": "Cloud & DevOps" },
+    { "name": "Jenkins", "level": 72, "category": "Cloud & DevOps" },
+    { "name": "Git / GitHub", "level": 88, "category": "Cloud & DevOps" },
+    { "name": "JUnit / Mockito", "level": 80, "category": "Testing" },
+    { "name": "Agile / Scrum", "level": 88, "category": "Concepts" },
+    { "name": "System Design", "level": 78, "category": "Concepts" }
+  ],
+  "skillCategories": ["Backend", "Frontend", "Database", "Cloud & DevOps", "Testing", "Concepts"]
+}
