@@ -7,7 +7,6 @@ Personal portfolio built with **Angular 20**, featuring **3D glassmorphism UI**,
 | Version | Folder | Style |
 |---------|--------|-------|
 | Default | `arpit-portfolio/` | 3D glass UI, blue accent |
-| Airtel | `arpit-portfolio-airtel/` | [Airtel Careers](https://careers.airtel.com/) inspired — red, corporate |
 
 ## Quick Start
 

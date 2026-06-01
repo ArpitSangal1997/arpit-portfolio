@@ -31,17 +31,10 @@ jobs:
           npm ci --legacy-peer-deps
           npm run build:gh-pages
 
-      - name: Build Airtel portfolio
-        working-directory: arpit-portfolio-airtel
-        run: |
-          npm ci --legacy-peer-deps
-          npm run build:gh-pages
-
-      - name: Combine sites for GitHub Pages
+      - name: Combine site for GitHub Pages
         run: |
           mkdir -p combined
           cp -r arpit-portfolio/dist/arpit-portfolio/browser combined/arpit-portfolio
-          cp -r arpit-portfolio-airtel/dist/arpit-portfolio/browser combined/arpit-portfolio-airtel
           cp arpit-portfolio/public/404.html combined/404.html
 
       - name: Upload artifact
