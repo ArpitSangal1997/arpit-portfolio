@@ -8,8 +8,8 @@ echo "Building main portfolio..."
 
 DEPLOY="$ROOT/_site"
 rm -rf "$DEPLOY"
-mkdir -p "$DEPLOY/arpit-portfolio"
-cp -r "$ROOT/arpit-portfolio/dist/arpit-portfolio/browser/." "$DEPLOY/arpit-portfolio/"
+mkdir -p "$DEPLOY"
+cp -r "$ROOT/arpit-portfolio/dist/arpit-portfolio/browser/." "$DEPLOY/"
 cp "$ROOT/arpit-portfolio/public/404.html" "$DEPLOY/404.html"
 echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/arpit-portfolio/"></head></html>' > "$DEPLOY/index.html"
 

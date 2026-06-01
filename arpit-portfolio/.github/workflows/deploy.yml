@@ -34,7 +34,7 @@ jobs:
       - name: Combine site for GitHub Pages
         run: |
           mkdir -p combined
-          cp -r arpit-portfolio/dist/arpit-portfolio/browser combined/arpit-portfolio
+          cp -r arpit-portfolio/dist/arpit-portfolio/browser/. combined/
           cp arpit-portfolio/public/404.html combined/404.html
 
       - name: Upload artifact
