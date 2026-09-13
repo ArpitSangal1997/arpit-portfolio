@@ -21,15 +21,15 @@ const FALLBACK: ResumeData = {
     lastName: 'Sangal',
     title: 'Software Engineer',
     tagline:
-      'Building scalable microservices and RESTful APIs with Java & Spring Boot.',
+      'Java/Spring Boot Backend Engineer with 3+ years building production REST APIs, microservices, and database-backed enterprise applications.',
     available: true,
-    resumePdf: 'Arpit_30_05_26.pdf',
+    resumePdf: 'Resume.pdf',
     github: { username: 'ArpitSangal1997', url: 'https://github.com/ArpitSangal1997' },
     linkedin: { username: 'arpit-sangal', url: 'https://linkedin.com/in/arpit-sangal' },
     email: 'sangalarpitsml@gmail.com',
     phone: '+91-9870956252',
     location: 'Noida, India',
-    education: 'MCA — GL Bajaj Institute, 2022'
+    education: 'MCA — GL Bajaj Institute of Technology and Management, 2022'
   },
   stats: [
     { value: '3+', label: 'Years Exp.' },
@@ -75,6 +75,17 @@ export class PortfolioService {
     const cacheBust = `?t=${Date.now()}`;
 
     try {
+      const localData = await firstValueFrom(
+        this.http.get<ResumeData>('resume.json').pipe(catchError(() => of(null)))
+      );
+
+      if (localData?.profile) {
+        this.data.set(localData);
+        this.loadedFrom.set('local');
+        this.loading.set(false);
+        return;
+      }
+
       const githubData = await firstValueFrom(
         this.http.get<ResumeData>(`${GITHUB_RESUME_URL}${cacheBust}`).pipe(
           catchError(() => of(null))
@@ -84,17 +95,6 @@ export class PortfolioService {
       if (githubData?.profile) {
         this.data.set(githubData);
         this.loadedFrom.set('github');
-        this.loading.set(false);
-        return;
-      }
-
-      const localData = await firstValueFrom(
-        this.http.get<ResumeData>('resume.json').pipe(catchError(() => of(null)))
-      );
-
-      if (localData?.profile) {
-        this.data.set(localData);
-        this.loadedFrom.set('local');
       }
     } catch {
       // keep fallback

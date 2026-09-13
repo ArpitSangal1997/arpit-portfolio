@@ -4,9 +4,9 @@
     "firstName": "Arpit",
     "lastName": "Sangal",
     "title": "Software Engineer",
-    "tagline": "Building scalable microservices and RESTful APIs with Java & Spring Boot. 3 years of impact — 35% faster APIs, 30% fewer production bugs, 95% on-time delivery.",
+    "tagline": "Java/Spring Boot Backend Engineer with 3+ years building production REST APIs, microservices, and database-backed enterprise applications.",
     "available": true,
-    "resumePdf": "Arpit_30_05_26.pdf",
+    "resumePdf": "Resume.pdf",
     "github": {
       "username": "ArpitSangal1997",
       "url": "https://github.com/ArpitSangal1997"
@@ -18,7 +18,7 @@
     "email": "sangalarpitsml@gmail.com",
     "phone": "+91-9870956252",
     "location": "Noida, India",
-    "education": "MCA — GL Bajaj Institute, 2022"
+    "education": "MCA — GL Bajaj Institute of Technology and Management, 2022"
   },
   "stats": [
     { "value": "3+", "label": "Years Exp." },
@@ -29,15 +29,15 @@
     "headlineMain": "Crafting robust",
     "headlineAccent": "backend systems",
     "paragraphs": [
-      "I'm a Software Engineer with 3 years of experience building enterprise-grade microservices and RESTful APIs. My work spans Java, Spring Boot, and cloud platforms—primarily AWS and GCP.",
-      "Currently at MetroTelWorks (Airtel), I specialize in improving system performance, reducing technical debt, and delivering scalable solutions in Agile environments. I care deeply about clean architecture, measurable outcomes, and developer experience.",
-      "When I'm not optimizing SQL queries or designing microservice architectures, I'm exploring new backend frameworks and contributing to team growth through code reviews and documentation."
+      "I'm a Java/Spring Boot Backend Engineer with 3+ years of experience developing and supporting production REST APIs, microservices, and database-backed enterprise applications.",
+      "My work spans SQL optimization, caching, authentication and authorization, asynchronous processing, automated testing, production debugging, and CI/CD workflows across AWS- and GCP-hosted environments.",
+      "I contribute across requirements analysis, implementation, deployment, and post-release support, with GitHub Copilot and Microsoft Copilot supporting code review, test scaffolding, refactoring, and documentation."
     ],
     "highlights": [
-      { "icon": "⚡", "label": "API Performance", "value": "35% improvement" },
-      { "icon": "🐛", "label": "Bug Reduction", "value": "30% fewer recurrences" },
-      { "icon": "📅", "label": "Sprint Delivery", "value": "95% on-time" },
-      { "icon": "🏗️", "label": "Tech Debt", "value": "25% reduction" }
+      { "icon": "⚡", "label": "Backend APIs", "value": "Java + Spring Boot" },
+      { "icon": "☁️", "label": "Cloud Delivery", "value": "AWS + GCP" },
+      { "icon": "🧪", "label": "Test Coverage", "value": "80%+ measured" },
+      { "icon": "👥", "label": "Platform Users", "value": "100+ supported" }
     ]
   },
   "experiences": [
@@ -48,13 +48,11 @@
       "period": "Feb 2026 – Present",
       "current": true,
       "points": [
-        "Developed and maintained scalable RESTful APIs using Java and Spring Boot for enterprise workflow and operational management systems.",
-        "Improved API response time by 35% through SQL query optimization, caching strategies, and backend code enhancements.",
-        "Designed backend microservices and optimized service communication for improved scalability and maintainability.",
-        "Implemented asynchronous processing and backend optimizations to reduce service latency.",
-        "Refactored legacy modules reducing technical debt by 25%.",
-        "Integrated backend services with AWS infrastructure and implemented secure authentication and access control.",
-        "Collaborated with frontend developers for seamless Angular integration and API consumption."
+        "Develop and maintain Java/Spring Boot APIs for enterprise operational workflows, including request validation, business rules, database integration, Angular-facing API contracts, and production release support.",
+        "Improve response times for selected APIs through SQL query profiling, query optimization, backend refactoring, and targeted caching for high-read operations.",
+        "Refactor Spring Boot services to improve inter-service communication, error handling, and long-term maintainability.",
+        "Implement asynchronous processing for long-running workflows, separating background operations from synchronous API requests and improving responsiveness.",
+        "Implement authentication and role-based authorization for backend APIs and integrate application services with AWS-hosted infrastructure."
       ],
       "tech": ["Java", "Spring Boot", "Microservices", "REST APIs", "MySQL", "AWS", "Jenkins", "Docker", "Angular"]
     },
@@ -64,12 +62,11 @@
       "location": "Noida, India",
       "period": "Aug 2024 – Aug 2025",
       "points": [
-        "Architected and deployed RESTful APIs using Java and Spring Boot supporting core business workflows for 100+ users.",
-        "Optimized API performance by 35% through advanced query optimization, caching strategies, and efficient code design.",
-        "Resolved critical production issues and improved system stability through backend optimizations.",
-        "Integrated backend services with GCP infrastructure including Cloud Storage, Cloud SQL, and Compute Engine.",
-        "Refactored legacy modules reducing technical debt and improving maintainability.",
-        "Collaborated with stakeholders to gather requirements and deliver scalable backend solutions."
+        "Owned the backend implementation of activity-tracking and reporting modules for an internal work-allocation platform used by 100+ users.",
+        "Identified latency bottlenecks and improved core application response times through SQL query optimization and targeted caching.",
+        "Investigated recurring production incidents, performed root-cause analysis, and implemented preventive fixes across application and database layers.",
+        "Integrated backend workflows with GCP Cloud Storage and Cloud SQL within a Compute Engine-hosted environment and supported deployment activities.",
+        "Refactored legacy service and data-access logic to improve code reuse, readability, and maintainability."
       ],
       "tech": ["Java", "Spring Boot", "REST APIs", "GCP", "MySQL", "Docker", "Git"]
     },
@@ -80,12 +77,11 @@
       "period": "Apr 2024 – Jun 2024",
       "type": "Contractual",
       "points": [
-        "Built scalable microservices using Java and Spring Boot with JWT-based authentication and authorization.",
-        "Developed responsive Angular UI components and integrated frontend modules with backend APIs.",
-        "Integrated secure third-party REST APIs and optimized backend workflows.",
-        "Optimized MySQL database performance using indexing, query tuning, and stored procedures.",
-        "Established CI/CD pipelines using Git, Maven, and Jenkins.",
-        "Achieved 80%+ code coverage through unit and integration testing using JUnit and Mockito."
+        "Developed Spring Boot APIs and implemented JWT-based authentication and authorization for protected application workflows.",
+        "Integrated third-party REST APIs and optimized MySQL queries through indexing and query tuning.",
+        "Added unit and integration tests using JUnit and Mockito, increasing measured code coverage to above 80%.",
+        "Supported automated build and deployment pipelines using Maven, Git, and Jenkins.",
+        "Developed Angular components and integrated them with backend REST APIs."
       ],
       "tech": ["Java", "Spring Boot", "JWT", "Angular", "MySQL", "Jenkins", "Maven", "JUnit", "Mockito"]
     },
@@ -95,11 +91,12 @@
       "location": "Noida, India",
       "period": "Mar 2022 – Jun 2023",
       "points": [
-        "Developed RESTful APIs and backend services reducing system latency by 10%.",
-        "Implemented asynchronous processing and batch operations improving backend efficiency.",
-        "Collaborated with business analysts and product teams to deliver scalable technical solutions.",
-        "Participated in code reviews, debugging, and backend enhancements maintaining high code quality standards.",
-        "Worked closely with frontend developers to integrate APIs with Angular applications."
+        "Developed REST APIs and backend services for a location-based city-exploration application, contributing across API design, implementation, testing, and deployment support.",
+        "Implemented asynchronous processing and batch operations to improve backend workflow efficiency and application responsiveness.",
+        "Aligned frontend-backend API contracts and integrated Spring Boot services with Angular components.",
+        "Participated in code reviews, debugging, and production issue resolution to maintain service reliability and code quality.",
+        "Collaborated with business analysts and product teams to translate functional requirements into REST APIs and backend workflow enhancements.",
+        "Integrated third-party mapping and location APIs and handled external-service errors within backend workflows."
       ],
       "tech": ["Java", "Spring Boot", "REST APIs", "Angular", "MySQL", "Git"]
     }
@@ -128,14 +125,14 @@
       ]
     },
     {
-      "name": "WalkSpan",
-      "description": "City exploration platform integrating real-time location and mapping APIs with a responsive Angular UI for enhanced user engagement.",
-      "tech": ["Java", "Angular", "REST APIs", "Location Services"],
+      "name": "City Exploration Platform",
+      "description": "Location-based city-exploration application integrating third-party mapping and location APIs with resilient backend workflows.",
+      "tech": ["Java", "Spring Boot", "REST APIs", "Angular"],
       "company": "KiwiTech",
       "highlights": [
-        "Developed city exploration platform with real-time location APIs",
-        "Designed responsive Angular UI enhancing user engagement",
-        "Integrated third-party mapping and location services"
+        "Developed REST APIs and backend services for city exploration workflows",
+        "Integrated third-party mapping and location APIs",
+        "Handled external-service errors and asynchronous backend operations"
       ]
     }
   ],
@@ -144,20 +141,26 @@
     { "name": "Spring Boot", "level": 90, "category": "Backend" },
     { "name": "Microservices", "level": 85, "category": "Backend" },
     { "name": "REST APIs", "level": 92, "category": "Backend" },
-    { "name": "Hibernate", "level": 80, "category": "Backend" },
+    { "name": "Spring Security", "level": 82, "category": "Backend" },
+    { "name": "Spring MVC", "level": 82, "category": "Backend" },
+    { "name": "JPA / Hibernate", "level": 80, "category": "Backend" },
     { "name": "Angular", "level": 78, "category": "Frontend" },
     { "name": "TypeScript", "level": 75, "category": "Frontend" },
     { "name": "JavaScript", "level": 75, "category": "Frontend" },
     { "name": "Bootstrap", "level": 80, "category": "Frontend" },
     { "name": "MySQL", "level": 85, "category": "Database" },
+    { "name": "PostgreSQL", "level": 78, "category": "Database" },
+    { "name": "MongoDB", "level": 72, "category": "Database" },
     { "name": "SQL Query Tuning", "level": 82, "category": "Database" },
     { "name": "AWS", "level": 78, "category": "Cloud & DevOps" },
     { "name": "Docker", "level": 75, "category": "Cloud & DevOps" },
     { "name": "Jenkins", "level": 72, "category": "Cloud & DevOps" },
+    { "name": "Maven", "level": 82, "category": "Cloud & DevOps" },
     { "name": "Git / GitHub", "level": 88, "category": "Cloud & DevOps" },
     { "name": "JUnit / Mockito", "level": 80, "category": "Testing" },
     { "name": "Agile / Scrum", "level": 88, "category": "Concepts" },
-    { "name": "System Design", "level": 78, "category": "Concepts" }
+    { "name": "System Design", "level": 78, "category": "Concepts" },
+    { "name": "GitHub Copilot / Microsoft Copilot", "level": 86, "category": "Concepts" }
   ],
   "skillCategories": ["Backend", "Frontend", "Database", "Cloud & DevOps", "Testing", "Concepts"]
 }
