@@ -33,7 +33,7 @@ export class NavbarComponent {
   scrollTo(href: string) {
     this.menuOpen = false;
     const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 
   toggleMenu() {

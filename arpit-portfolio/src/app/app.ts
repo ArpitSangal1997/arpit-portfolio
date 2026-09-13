@@ -40,10 +40,21 @@ import { Scene3dComponent } from './components/scene-3d/scene-3d';
     <app-footer />
   `,
   styles: [`
+    :host {
+      display: block;
+      position: relative;
+      isolation: isolate;
+    }
+
     .main-content {
       display: block;
       position: relative;
       z-index: 1;
+    }
+
+    app-footer {
+      position: relative;
+      z-index: 2;
     }
   `]
 })

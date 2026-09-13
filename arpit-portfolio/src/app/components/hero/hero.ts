@@ -14,6 +14,6 @@ export class HeroComponent {
 
   scrollTo(href: string) {
     const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 }
