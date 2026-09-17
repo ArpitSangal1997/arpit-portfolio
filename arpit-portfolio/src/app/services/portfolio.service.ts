@@ -19,7 +19,7 @@ const FALLBACK: ResumeData = {
     name: 'Arpit Sangal',
     firstName: 'Arpit',
     lastName: 'Sangal',
-    title: 'Software Engineer',
+    title: 'Java/Spring Boot Backend Engineer',
     tagline:
       'Java/Spring Boot Backend Engineer with 3+ years building production REST APIs, microservices, and database-backed enterprise applications.',
     available: true,
@@ -29,23 +29,40 @@ const FALLBACK: ResumeData = {
     email: 'sangalarpitsml@gmail.com',
     phone: '+91-9870956252',
     location: 'Noida, India',
-    education: 'MCA — GL Bajaj Institute of Technology and Management, 2022'
+    education: 'MCA (2022) · BCA (2019)'
   },
   stats: [
     { value: '3+', label: 'Years Exp.' },
-    { value: '35%', label: 'API Boost' },
-    { value: '95%', label: 'On-Time' }
+    { value: '100+', label: 'Users Supported' },
+    { value: '80%+', label: 'Test Coverage' }
   ],
   about: {
     headlineMain: 'Crafting robust',
     headlineAccent: 'backend systems',
-    paragraphs: [],
-    highlights: []
+    paragraphs: [
+      'I\'m a Java/Spring Boot Backend Engineer with 3+ years of experience developing and supporting production REST APIs, microservices, and database-backed enterprise applications.',
+      'My work spans SQL optimization, caching, authentication and authorization, asynchronous processing, automated testing, production debugging, and CI/CD workflows across AWS- and GCP-hosted environments.',
+      'I contribute across requirements analysis, implementation, deployment, and post-release support, with GitHub Copilot and Microsoft Copilot supporting code review, test scaffolding, refactoring, and documentation.'
+    ],
+    highlights: [
+      { icon: '⚡', label: 'Backend APIs', value: 'Java + Spring Boot' },
+      { icon: '☁️', label: 'Cloud Delivery', value: 'AWS + GCP' },
+      { icon: '🧪', label: 'Test Coverage', value: '80%+ measured' },
+      { icon: '👥', label: 'Platform Users', value: '100+ supported' }
+    ]
   },
   experiences: [],
   projects: [],
   skills: [],
-  skillCategories: ['Backend', 'Frontend', 'Database', 'Cloud & DevOps', 'Testing', 'Concepts']
+  skillCategories: [
+    'Backend',
+    'Databases',
+    'Testing',
+    'Build & Delivery',
+    'Cloud & Containers',
+    'Frontend',
+    'AI-Assisted Development'
+  ]
 };
 
 @Injectable({ providedIn: 'root' })

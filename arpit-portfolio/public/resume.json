@@ -3,7 +3,7 @@
     "name": "Arpit Sangal",
     "firstName": "Arpit",
     "lastName": "Sangal",
-    "title": "Software Engineer",
+    "title": "Java/Spring Boot Backend Engineer",
     "tagline": "Java/Spring Boot Backend Engineer with 3+ years building production REST APIs, microservices, and database-backed enterprise applications.",
     "available": true,
     "resumePdf": "Resume.pdf",
@@ -18,12 +18,12 @@
     "email": "sangalarpitsml@gmail.com",
     "phone": "+91-9870956252",
     "location": "Noida, India",
-    "education": "MCA — GL Bajaj Institute of Technology and Management, 2022"
+    "education": "MCA (2022) · BCA (2019)"
   },
   "stats": [
     { "value": "3+", "label": "Years Exp." },
-    { "value": "35%", "label": "API Boost" },
-    { "value": "95%", "label": "On-Time" }
+    { "value": "100+", "label": "Users Supported" },
+    { "value": "80%+", "label": "Test Coverage" }
   ],
   "about": {
     "headlineMain": "Crafting robust",
@@ -49,12 +49,12 @@
       "current": true,
       "points": [
         "Develop and maintain Java/Spring Boot APIs for enterprise operational workflows, including request validation, business rules, database integration, Angular-facing API contracts, and production release support.",
-        "Improve response times for selected APIs through SQL query profiling, query optimization, backend refactoring, and targeted caching for high-read operations.",
-        "Refactor Spring Boot services to improve inter-service communication, error handling, and long-term maintainability.",
-        "Implement asynchronous processing for long-running workflows, separating background operations from synchronous API requests and improving responsiveness.",
-        "Implement authentication and role-based authorization for backend APIs and integrate application services with AWS-hosted infrastructure."
+        "Improved response times for selected APIs through SQL query profiling, query optimization, backend refactoring, and targeted caching for high-read operations.",
+        "Refactored Spring Boot services to improve inter-service communication, error handling, and long-term maintainability.",
+        "Implemented asynchronous processing for long-running workflows, separating background operations from synchronous API requests and improving responsiveness.",
+        "Implemented authentication and role-based authorization for backend APIs and integrated application services with AWS-hosted infrastructure."
       ],
-      "tech": ["Java", "Spring Boot", "Microservices", "REST APIs", "MySQL", "AWS", "Jenkins", "Docker", "Angular"]
+      "tech": ["Java", "Spring Boot", "REST APIs", "Microservices", "MySQL", "AWS", "Angular"]
     },
     {
       "title": "Software Engineer",
@@ -65,14 +65,14 @@
         "Owned the backend implementation of activity-tracking and reporting modules for an internal work-allocation platform used by 100+ users.",
         "Identified latency bottlenecks and improved core application response times through SQL query optimization and targeted caching.",
         "Investigated recurring production incidents, performed root-cause analysis, and implemented preventive fixes across application and database layers.",
-        "Integrated backend workflows with GCP Cloud Storage and Cloud SQL within a Compute Engine-hosted environment and supported deployment activities.",
+        "Integrated backend workflows with GCP Cloud Storage and Cloud SQL within a Compute Engine-hosted environment and supported associated deployment activities.",
         "Refactored legacy service and data-access logic to improve code reuse, readability, and maintainability."
       ],
       "tech": ["Java", "Spring Boot", "REST APIs", "GCP", "MySQL", "Docker", "Git"]
     },
     {
       "title": "Associate Software Engineer",
-      "company": "Vision India Services / MediaTek",
+      "company": "Vision India Services | MediaTek",
       "location": "Noida, India",
       "period": "Apr 2024 – Jun 2024",
       "type": "Contractual",
@@ -108,24 +108,23 @@
       "tech": ["Java", "Spring Boot", "MySQL", "GCP"],
       "company": "Wipro",
       "highlights": [
-        "Designed and developed internal platform for tracking 100+ users",
-        "Implemented automated reporting modules with downloadable activity logs",
-        "Created testing documentation and enhanced onboarding manuals"
+        "Designed the MySQL schema and indexing strategy for production and non-production activity tracking across 100+ users, using targeted indexes to avoid full-table scans and support responsive dashboard queries",
+        "Implemented scheduled report generation and downloadable activity logs, moving report processing outside synchronous API request flows and reducing repeated database operations"
       ]
     },
     {
       "name": "MantelTop",
-      "description": "Digital badge creation and exchange platform with secure user workflows, JWT authentication, and real-time badge operations.",
+      "description": "Digital badge creation and exchange platform with secure user workflows and JWT-based authentication.",
       "tech": ["Java", "Spring Boot", "Angular", "MySQL", "JWT"],
       "company": "Vision India Services",
       "highlights": [
-        "Built secure digital badge creation and exchange workflows",
-        "Architected scalable backend services for real-time badge operations",
-        "Implemented RESTful APIs enabling seamless frontend-backend communication"
+        "Developed Spring Boot APIs for badge creation, exchange, ownership, and collection-management workflows",
+        "Implemented JWT-based authentication and authorization for protected endpoints",
+        "Supported authenticated workflows in the Angular frontend"
       ]
     },
     {
-      "name": "City Exploration Platform",
+      "name": "WalkSpan",
       "description": "Location-based city-exploration application integrating third-party mapping and location APIs with resilient backend workflows.",
       "tech": ["Java", "Spring Boot", "REST APIs", "Angular"],
       "company": "KiwiTech",
@@ -143,24 +142,28 @@
     { "name": "REST APIs", "level": 92, "category": "Backend" },
     { "name": "Spring Security", "level": 82, "category": "Backend" },
     { "name": "Spring MVC", "level": 82, "category": "Backend" },
-    { "name": "JPA / Hibernate", "level": 80, "category": "Backend" },
+    { "name": "JPA / Hibernate", "level": 80, "category": "Databases" },
     { "name": "Angular", "level": 78, "category": "Frontend" },
     { "name": "TypeScript", "level": 75, "category": "Frontend" },
     { "name": "JavaScript", "level": 75, "category": "Frontend" },
     { "name": "Bootstrap", "level": 80, "category": "Frontend" },
-    { "name": "MySQL", "level": 85, "category": "Database" },
-    { "name": "PostgreSQL", "level": 78, "category": "Database" },
-    { "name": "MongoDB", "level": 72, "category": "Database" },
-    { "name": "SQL Query Tuning", "level": 82, "category": "Database" },
-    { "name": "AWS", "level": 78, "category": "Cloud & DevOps" },
-    { "name": "Docker", "level": 75, "category": "Cloud & DevOps" },
-    { "name": "Jenkins", "level": 72, "category": "Cloud & DevOps" },
-    { "name": "Maven", "level": 82, "category": "Cloud & DevOps" },
-    { "name": "Git / GitHub", "level": 88, "category": "Cloud & DevOps" },
-    { "name": "JUnit / Mockito", "level": 80, "category": "Testing" },
-    { "name": "Agile / Scrum", "level": 88, "category": "Concepts" },
-    { "name": "System Design", "level": 78, "category": "Concepts" },
-    { "name": "GitHub Copilot / Microsoft Copilot", "level": 86, "category": "Concepts" }
+    { "name": "MySQL", "level": 85, "category": "Databases" },
+    { "name": "PostgreSQL", "level": 78, "category": "Databases" },
+    { "name": "MongoDB", "level": 72, "category": "Databases" },
+    { "name": "SQL Query Optimization", "level": 82, "category": "Databases" },
+    { "name": "JUnit", "level": 80, "category": "Testing" },
+    { "name": "Mockito", "level": 80, "category": "Testing" },
+    { "name": "Unit Testing", "level": 80, "category": "Testing" },
+    { "name": "Integration Testing", "level": 78, "category": "Testing" },
+    { "name": "Maven", "level": 82, "category": "Build & Delivery" },
+    { "name": "Git", "level": 88, "category": "Build & Delivery" },
+    { "name": "Jenkins", "level": 72, "category": "Build & Delivery" },
+    { "name": "CI/CD", "level": 78, "category": "Build & Delivery" },
+    { "name": "AWS", "level": 78, "category": "Cloud & Containers" },
+    { "name": "GCP", "level": 78, "category": "Cloud & Containers" },
+    { "name": "Docker", "level": 75, "category": "Cloud & Containers" },
+    { "name": "GitHub Copilot", "level": 86, "category": "AI-Assisted Development" },
+    { "name": "Microsoft Copilot", "level": 86, "category": "AI-Assisted Development" }
   ],
-  "skillCategories": ["Backend", "Frontend", "Database", "Cloud & DevOps", "Testing", "Concepts"]
+  "skillCategories": ["Backend", "Databases", "Testing", "Build & Delivery", "Cloud & Containers", "Frontend", "AI-Assisted Development"]
 }
